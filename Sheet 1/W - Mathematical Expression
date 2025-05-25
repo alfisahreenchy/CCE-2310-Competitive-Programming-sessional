@@ -2,40 +2,40 @@
 using namespace std;
 int main()
 {
-  long long A,B;
-  char S;
-    cin>>A>>S>>B;
-    if(S=='<')
+ long long a,b,c;
+ char s,q;
+ cin>>a>>s>>b>>q>>c;
+    if(s=='+')
     {
-        if(A<B)
+        if(a+b==c)
         {
-            cout<<"Right"<<endl;
+            cout<<"Yes"<<endl;
         }
         else
         {
-            cout<<"Wrong"<<endl;
+            cout<<a+b;
         }
     }
-    else if(S=='>')
+    else if(s=='-')
     {
-        if(A>B)
+        if(a-b==c)
         {
-            cout<<"Right"<<endl;
+            cout<<"Yes"<<endl;
         }
         else
         {
-            cout<<"Wrong"<<endl;
+            cout<<a-b;
         }
     }
-    else if(S=='=')
+    else if(s=='*')
     {
-        if(A==B)
+        if(a*b==c)
         {
-            cout<<"Right"<<endl;
+            cout<<"Yes"<<endl;
         }
         else
         {
-            cout<<"Wrong"<<endl;
+            cout<<a*b;
         }
     }
 }
